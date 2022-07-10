@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="/static/images/sc-icon.jpg"/>
+    <link rel="stylesheet" href='/static/boxicons.min.css'>
+    <script src="/static/tailwind.js"></script>
+    {{ template "head" .}}
+</head>
+
+<body class="bg-teal-500">
+{{ include "layouts/header" }}
+<div class="min-h-screen">
+    <div class="w-full h-16"></div>
+    {{ template "content" .}}
+</div>
+<hr>
+{{ include "layouts/footer" }}
+</body>
+</html>
