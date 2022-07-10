@@ -3,5 +3,12 @@
 {{ end }}
 
 {{ define "content" }}
-<h1>{{ .title }}</h1>
+<div class="h-screen overflow-hidden bg-indigo-500">
+    <div class="relative grid h-[100%] w-[100%] rotate-45 grid-cols-1 place-items-center bg-teal-500">
+        <div class="w-fit -rotate-45">
+            <img src="/static/images/sc-icon.jpg" class="mx-auto h-1/2 w-1/2 rounded-3xl shadow-xl mb-8" alt="">
+            <div class="mx-auto text-center text-6xl font-bold text-white">Snowcraft 雪域公益服</div>
+        </div>
+    </div>
+</div>
 {{ end }}
